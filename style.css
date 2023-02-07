@@ -1,0 +1,174 @@
+/* Surf Spots Sri Lanka*/
+*{
+	font-family: "calibri";
+}
+
+body {
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+/*do i need these?
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	
+}
+
+.flex-item {
+	padding: 20px;
+	margin: 20px;
+	background-color: white;
+}
+*/
+
+/* HEADER */
+
+header {
+	background: black;
+	background-image: url("images/hero.png");
+	background-size: 100%;
+	background-position: center;
+	height: 100px;
+	padding: 25px;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+nav li a {
+	color: white;
+}
+
+.showcase {
+	background: white;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+	padding: 5px;
+}
+
+.showcase div {
+	background: white;
+	margin: auto;
+	margin: 10px;
+}
+
+.showcase div a {
+	color: #4f86a4;
+}
+
+.showcase h3 {
+	text-align: center;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 700px) {
+	.showcase {
+		flex-wrap: wrap;
+	}	
+}
+
+.homepage-spots {
+	background: white;
+	color: white;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.homepage-spots figure {
+	margin: auto;
+	width: 300px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.homepage-spots figure img {
+	width: 300px;
+	box-shadow: black 0 0 5px;
+	border-radius: 10px; 
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 350px) {
+	.homepage-spots figure {
+		width: 80%;
+	}	
+	.homepage-spots figure img {
+		width: 80%;
+	}	
+}
+
+.spot-features {
+	margin: 0;
+}
+
+.spot-features figure {
+	margin: 0;
+}
+
+.spot-features figure img {
+	width: 100%;
+	max-height: 1000px;
+}
+
+/* IMAGES */
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 50%;
+	padding: 2px;
+}
+
+.images-landscape img {
+	max-width: 100%;
+	height: auto;
+}
+
+.introduction {
+	margin: 10px;
+	text-align: center;
+}
+
+* {
+	font-family: Helvetica Neue, Arial;
+	color: black;
+}
+h1{
+	color: #87CEEB;
+}
+
+p {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+	background: black;
+	background-image: url("images/footer.png");
+	color: white;
+	padding: 25px 25px 25px 25px;
+	text-align: center;
+}
