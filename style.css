@@ -62,10 +62,6 @@ nav li a {
 	.showcase {
 		flex-wrap: wrap;
 	}	
-	.homepage-spots {
-		display: flex;
-		flex-direction: column;
-	}
 }
 
 .homepage-spots {
@@ -91,7 +87,7 @@ nav li a {
 }
 
 /* RESPONSIVE RULES */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 1000px) {
 	.homepage-spots figure {
 		width: 80%;
 	}	
