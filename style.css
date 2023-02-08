@@ -14,13 +14,13 @@ header {
 	background-image: url("images/hero.png");
 	background-size: 100%;
 	background-position: center;
-	height: 100px;
+	height: 200px;
 	padding: 25px;
 	text-align: center;
 }
 
 nav {
-	font-size: 30px;
+	font-size: 25px;
 }
 
 nav ul {
@@ -61,12 +61,6 @@ nav li a {
 	text-align: center;
 }
 
-/* RESPONSIVE RULES */
-@media screen and (max-width: 1000px) {
-	.showcase {
-		flex-wrap: wrap;
-	}	
-}
 
 .homepage-spots {
 	background: white;
@@ -98,7 +92,38 @@ nav li a {
 	.homepage-spots figure img {
 		width: 80%;
 	}	
+	.showcase {
+		flex-wrap: wrap;
+	}	
+	header {
+		height: 300px;
+	}
+	h1 {
+		font-size: 80px;
+	}
 }
+
+@media screen and (min-width: 1000px) {
+	h1 {
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 555px) {
+	h1 {
+		font-size: 50px;
+	}
+	header {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	h1 {
+		font-size: 30px;
+	}
+}
+
 
 .spot-features {
 	margin: 0;
