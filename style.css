@@ -9,23 +9,6 @@ body {
 	padding: 0;
 }
 
-/*do i need these?
-.flex-container {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	
-}
-
-.flex-item {
-	padding: 20px;
-	margin: 20px;
-	background-color: white;
-}
-*/
-
-/* HEADER */
-
 header {
 	background: black;
 	background-image: url("images/hero.png");
@@ -75,7 +58,7 @@ nav li a {
 }
 
 /* RESPONSIVE RULES */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
 	.showcase {
 		flex-wrap: wrap;
 	}	
