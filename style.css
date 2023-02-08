@@ -63,6 +63,7 @@ nav li a {
 		flex-wrap: wrap;
 	}	
 	.homepage-spots {
+		display: flex;
 		flex-direction: column;
 	}
 }
