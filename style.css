@@ -19,6 +19,10 @@ header {
 	text-align: center;
 }
 
+nav {
+	font-size: 30px;
+}
+
 nav ul {
 	margin: 0;
 	padding: 0;
