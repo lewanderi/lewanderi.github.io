@@ -1,0 +1,46 @@
+import random
+def choose_letters():
+    letters = ["a", "d", "e", "h", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "v"]
+    current_round = []
+    for i in range(3):
+        letter = random.choice(letters)
+        while letter in current_round:
+            letter = random.choice(letters)
+        current_round.append(letter)
+    return current_round
+
+def check_word(list_of_letters):
+    jatkuu = True
+    while jatkuu == True:
+        vastaus = input("Kirjoita vastauksesi:\n")
+        #ei toimi
+        if all(letter in vastaus for letter in list_of_letters):
+            print(f"Hienoa! Kirjaimet {list_of_letters} ovat sanassa {vastaus}")
+        else:
+            print(f"Oh no! Sanassa {vastaus} ei ole kaikkia vaadittuja kirjaimia {list_of_letters}")
+            jatkuu = False
+
+
+def main():
+    print("Tervetuloa pelaamaan sanapelia!")
+    print("Kirjaimet ovat:")
+    round = choose_letters()
+    for i in round:
+        print(i)
+    print()
+    check_word(round)
+    print()
+    jatko = input("Paina enter jos haluat jatkaa, muuten kirjoita l ja paina enter\n")
+    while jatko == "":
+        round = choose_letters()
+        print("Seuraavan kierroksen kirjaimet ovat:")
+        for i in round:
+            print(i)
+        print()
+        check_word(round)
+        print()
+        jatko = input("Paina enter jos haluat jatkaa, muuten kirjoita l ja paina enter\n")
+    print()
+    print("Lopetit pelin, kiitos pelaamisesta! Nähdään pian uudelleen :)")
+
+main()
